@@ -10,7 +10,9 @@ type userController struct {
 }
 
 // bind the function to the userController
-func (uc userController) serverHTTP(w http.ResponseWriter, r *http.Request) {
+// we are creating a ServeHTTP method with those 2 params
+// => for go this automatically means that this method is an implementation of the Handler type https://golang.org/pkg/http/#Handler
+func (uc userController) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// type conversion: byte to string
 	w.Write([]byte("Hello from the User Controller!"))
 }
