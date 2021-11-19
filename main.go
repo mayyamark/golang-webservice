@@ -17,4 +17,4 @@ func main() {
 // to start the app:
 // 1. in the Terminal: go build .
 // 2. in the Terminal: ./golang-webservice
-// 3. in the browser: localhost:3000/users
+// 3. in the browser: localhost:3000/users OR use Postman
